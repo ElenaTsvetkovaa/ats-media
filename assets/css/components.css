@@ -1,0 +1,442 @@
+/* Certifications */
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.certificate-item {
+    background: linear-gradient(145deg, rgba(35, 35, 45, 0.7) 0%, rgba(20, 20, 25, 0.9) 100%);
+    border: 1px solid rgba(74, 144, 226, 0.2);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4),
+                0 0 40px rgba(74, 144, 226, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 144, 226, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.certificate-item:hover::before {
+    left: 100%;
+}
+
+.certificate-item:hover {
+    transform: translateY(-12px) scale(1.05);
+    border-color: rgba(168, 85, 247, 0.6);
+    box-shadow: 0 15px 50px rgba(168, 85, 247, 0.3),
+                0 0 60px rgba(74, 144, 226, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background: linear-gradient(145deg, rgba(88, 28, 135, 0.2) 0%, rgba(30, 58, 138, 0.25) 100%);
+}
+
+.partner-logo {
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    max-width: 150px;
+    height: auto;
+    filter: brightness(1);
+}
+
+.certificate-item:hover .partner-logo {
+    opacity: 1;
+    filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+    .certificates-container {
+        gap: 1.5rem;
+    }
+
+    .certificate-item {
+        max-width: 150px;
+        padding: 1rem;
+    }
+
+    .partner-logo {
+        max-width: 120px;
+    }
+}
+
+/* Service Info Box */
+.service-info-box {
+    background: transparent;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+}
+
+.service-info-box h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-info-box hr {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #4a90e2, #a855f7);
+    border: none;
+    margin: 1.5rem auto;
+    opacity: 1;
+}
+
+.service-info-box p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.service-section-description {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Service Cards */
+.service-card {
+    background: linear-gradient(145deg, rgba(30, 58, 138, 0.85) 0%, rgba(0, 0, 0, 0.95) 50%, rgba(88, 28, 135, 0.75) 100%) !important;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5),
+                0 0 40px rgba(74, 144, 226, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(74, 144, 226, 0.25);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(74, 144, 226, 0.7),
+        rgba(168, 85, 247, 0.5),
+        rgba(239, 21, 27, 0.4),
+        transparent);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.service-card:nth-child(even) {
+    background: linear-gradient(145deg, rgba(88, 28, 135, 0.75) 0%, rgba(0, 0, 0, 0.95) 50%, rgba(30, 58, 138, 0.85) 100%) !important;
+    border-color: rgba(168, 85, 247, 0.25);
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(74, 144, 226, 0.35),
+                0 0 80px rgba(74, 144, 226, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border-color: rgba(74, 144, 226, 0.6);
+}
+
+.service-card:nth-child(even):hover {
+    box-shadow: 0 20px 60px rgba(168, 85, 247, 0.35),
+                0 0 80px rgba(168, 85, 247, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border-color: rgba(168, 85, 247, 0.6);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    color: #4a90e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(44, 90, 160, 0.05) 100%);
+    width: 70px;
+    height: 70px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.service-icon::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.3), rgba(44, 90, 160, 0.3));
+    border-radius: 1rem;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.service-card:hover .service-icon::after {
+    opacity: 1;
+}
+
+.service-icon svg {
+    color: #4a90e2;
+    filter: drop-shadow(0 2px 12px rgba(74, 144, 226, 0.4));
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover .service-icon svg {
+    color: #60a5fa;
+    filter: drop-shadow(0 6px 20px rgba(74, 144, 226, 0.7));
+    transform: scale(1.15) rotate(5deg);
+}
+
+.service-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+}
+
+.service-description {
+    color: #d0d0d0;
+    line-height: 1.75;
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.service-card .btn {
+    margin-top: auto;
+    background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+    border: 1px solid rgba(74, 144, 226, 0.3);
+    color: #fff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.service-card .btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.service-card .btn:hover {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.5),
+                0 0 40px rgba(74, 144, 226, 0.2);
+    border-color: rgba(74, 144, 226, 0.6);
+}
+
+/* Service Content */
+.service-content {
+    color: #fff;
+    padding: 2rem;
+}
+
+.service-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.service-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .service-content {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .service-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Content Box */
+.content-box {
+    background: linear-gradient(135deg, rgba(96, 134, 237, 0.9) 0%, rgba(92, 60, 209, 0.7) 100%) !important;
+    border-radius: 1.5rem;
+    color: #fff;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(74, 144, 226, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.content-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.content-box:hover::before {
+    opacity: 1;
+}
+
+.content-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5),
+                0 0 60px rgba(74, 144, 226, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border-color: rgba(74, 144, 226, 0.3);
+}
+
+.content-box h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.content-box p {
+    color: #fff !important;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        margin-bottom: 1rem;
+    }
+
+    .content-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .content-box p {
+        font-size: 1rem;
+    }
+}
+
+/* CTA Box */
+.cta-box {
+    background: linear-gradient(145deg, rgba(44, 90, 160, 0.18) 0%, rgba(30, 58, 138, 0.22) 100%);
+    border: 2px solid rgba(74, 144, 226, 0.3);
+    border-radius: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25),
+                0 0 30px rgba(74, 144, 226, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(74, 144, 226, 0.1),
+        transparent);
+    transition: left 0.8s;
+}
+
+.cta-box:hover::before {
+    left: 100%;
+}
+
+.cta-box:hover {
+    border-color: rgba(74, 144, 226, 0.5);
+    box-shadow: 0 12px 30px rgba(74, 144, 226, 0.2),
+                0 0 50px rgba(74, 144, 226, 0.12),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    transform: translateY(-4px) scale(1.01);
+}
+
+.cta-box h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 2.25rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #ffffff 0%, #60a5fa 70%, #ef151b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.cta-box p {
+    color: #d0d0d0;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.cta-box button {
+    color: #d0d0d0;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .cta-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-box p {
+        font-size: 1rem;
+    }
+}
