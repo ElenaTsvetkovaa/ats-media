@@ -69,10 +69,22 @@
     margin-right: auto;
 }
 
-.hero-text em {
+.hero-text i {
     font-weight: 700;
-    color: #ef151b;
-    font-style: normal;
+}
+
+.methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    font-size: 1.05rem;
+    min-height: 150px;
+}
+
+.methods li {
+    text-align: left;
 }
 
 .hero-btn {
