@@ -1,0 +1,76 @@
+{
+  "row1": [
+    {
+      "src": "assets/images/brands/Bosch-logo.svg.png",
+      "alt": "Bosch"
+    },
+    {
+      "src": "assets/images/brands/home2u-logo.svg",
+      "alt": "Home2U"
+    },
+    {
+      "src": "assets/images/brands/levins-logo.png",
+      "alt": "LevIns"
+    },
+    {
+      "src": "assets/images/brands/Praktiker_logo.png",
+      "alt": "Praktiker"
+    },
+    {
+      "src": "assets/images/brands/toyota_logo.png",
+      "alt": "Toyota"
+    },
+    {
+      "src": "assets/images/brands/ОББ_logo.svg.png",
+      "alt": "OBB"
+    }
+  ],
+  "row2":[
+    {
+      "src": "assets/images/brands/Aladin_Foods_Logo.png",
+      "alt": "Aladin Foods"
+    },
+    {
+      "src": "assets/images/brands/boni-logo.png",
+      "alt": "Boni"
+    },
+    {
+      "src": "assets/images/brands/pepsi_logo.png",
+      "alt": "Pepsi"
+    },
+    {
+      "src": "assets/images/brands/prestij_logo.png",
+      "alt": "Prestige"
+    },
+    {
+      "src": "assets/images/brands/Kaufland_logo.png",
+      "alt": "Kaufland"
+    }
+  ],
+  "row3": [
+    {
+      "src": "assets/images/brands/dr-denkova-derm-logo.png",
+      "alt": "Dr Denkova Dermatology"
+    },
+    {
+      "src": "assets/images/brands/forcelab_logo.webp",
+      "alt": "ForceLab"
+    },
+    {
+      "src": "assets/images/brands/microsoft-logo.png",
+      "alt": "Microsoft"
+    },
+    {
+      "src": "assets/images/brands/svr-logo.png",
+      "alt": "SVR"
+    },
+    {
+      "src": "assets/images/brands/soPharmacy_logo.png",
+      "alt": "SoPharmacy"
+    },
+    {
+      "src": "assets/images/brands/technopolis_logo.png",
+      "alt": "Technopolis"
+    }
+  ]
+}
