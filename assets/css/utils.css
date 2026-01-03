@@ -1,6 +1,15 @@
 /* Global Resets */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&subset=cyrillic');
 
+:root {
+    --main-background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(0, 0, 0, 0.95) 50%, rgba(88, 28, 135, 0.7) 100%);;
+    --color-buttons: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);;
+    --color-accent: #f5c542;
+
+    --color-bg: #ffffff;
+    --color-text: #222222;
+}
+
 * {
     margin: 0;
     padding: 0;

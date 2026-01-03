@@ -5,7 +5,7 @@
 }
 
 .hero-overlay {
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(0, 0, 0, 0.95) 50%, rgba(88, 28, 135, 0.7) 100%);
+    background: var(--main-background);
     min-height: 600px;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@
 
 .hero-btn {
     color: #fff;
-    background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+    background: var(--color-buttons);
     border-radius: 0 20px 0 20px;
     font-size: 1.25rem;
     padding: 0.75rem 2.5rem;
@@ -105,7 +105,7 @@
     color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(44, 90, 160, 0.4);
-    background: linear-gradient(135deg, #3563a8 0%, #2547a0 100%);
+    background: var(--color-buttons);
 }
 
 /* Ripple effect */
@@ -519,5 +519,88 @@ section, .container.py-4, .container.py-5 {
 
     .content-box p {
         font-size: 1rem;
+    }
+}
+
+/*Carousel*/
+
+.carousel-row {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 10px 0;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+            to right,
+            transparent 0%,
+            black 10%,
+            black 90%,
+            transparent 100%
+    );
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    will-change: transform;
+}
+
+.carousel-track.scroll-left {
+    animation: scrollLeft 45s linear infinite;
+}
+
+.carousel-track.scroll-right {
+    animation: scrollRight 45s linear infinite;
+}
+
+.logo-card {
+    flex-shrink: 0;
+    width: 180px;
+    height: 100px;
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5rem;
+}
+
+.logo-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0.4);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
