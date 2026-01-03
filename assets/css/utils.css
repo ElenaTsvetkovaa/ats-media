@@ -2,12 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&subset=cyrillic');
 
 :root {
-    --main-background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(0, 0, 0, 0.95) 50%, rgba(88, 28, 135, 0.7) 100%);;
+    --main-background: linear-gradient(135deg, rgb(4, 21, 67) 0%, rgb(6, 6, 41) 50%, rgb(23, 13, 51) 100%);
     --color-buttons: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);;
-    --color-accent: #f5c542;
+    --color-cards: linear-gradient(135deg, #032177, #060935);;
 
-    --color-bg: #ffffff;
-    --color-text: #222222;
+    --border-color:  linear-gradient(135deg, rgba(95, 126, 251, 0.5) 0%, rgba(3, 13, 57, 0.29) 65%);
 }
 
 * {
@@ -17,14 +16,14 @@
 }
 
 html {
-    background: radial-gradient(ellipse at top, #1a1a2e 0%, #0a0a0f 100%);
+    background: var(--main-background);
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(10, 10, 15, 0.98) 100%);
+    background: var(--main-background);
     overflow-x: hidden;
     overflow-y: auto;
     opacity: 0;
