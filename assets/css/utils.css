@@ -3,7 +3,7 @@
 
 :root {
     --main-background: linear-gradient(135deg, rgb(4, 21, 67) 0%, rgb(6, 6, 41) 50%, rgb(23, 13, 51) 100%);
-    --color-buttons: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);;
+    --color-buttons: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
     --color-cards: linear-gradient(135deg, #032177, #060935);;
 
     --border-color:  linear-gradient(135deg, rgba(95, 126, 251, 0.5) 0%, rgba(3, 13, 57, 0.29) 65%);
@@ -19,7 +19,6 @@
 html {
     background: var(--main-background);
     scroll-behavior: smooth;
-    overflow-x: hidden;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 

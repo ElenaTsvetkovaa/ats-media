@@ -574,7 +574,6 @@ section, .container.py-4, .container.py-5 {
 
 .work-process .steps-item:hover .steps-number {
     background: var(--accent-color);
-    color: var(--contrast-color);
 }
 
 .work-process .steps-item:hover .steps-image img {
@@ -596,8 +595,6 @@ section, .container.py-4, .container.py-5 {
 .work-process .steps-content {
     position: relative;
     padding: 40px 30px 30px;
-    display: flex;
-    flex-direction: column;
 }
 
 .work-process .steps-content .steps-number {
@@ -607,9 +604,7 @@ section, .container.py-4, .container.py-5 {
     width: 60px;
     height: 60px;
     background: var(--accent-color);
-    color: var(--contrast-color);
     border-radius: 50%;
-    font-family: var(--heading-font);
     font-size: 24px;
     font-weight: 700;
     display: flex;
@@ -628,8 +623,7 @@ section, .container.py-4, .container.py-5 {
     font-size: 18px;
     color: #ffffff;
     margin-bottom: 1.5rem;
-    margin-top: 0;
-    flex-grow: 1;
+    padding: 10px;
 }
 
 .work-process .steps-features .feature-item {
