@@ -75,7 +75,9 @@
     .audit-btn {
         margin-right: 1rem;
         margin-top: 1rem;
-        width: calc(100% - 2rem);
+        width: fit-content;
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
     }
 
     .navbar-nav {

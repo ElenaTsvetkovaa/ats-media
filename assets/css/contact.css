@@ -132,3 +132,50 @@
     align-items: start;
     text-align: start;
 }
+
+
+/* Responsive hero */
+@media (max-width: 768px) {
+    .contact-overlay {
+        min-height: 500px;
+        padding: 2rem 1rem;
+    }
+
+    .contact-content {
+        margin: 0 0 3rem;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0;
+    }
+
+    .call-box {
+        padding: 2rem 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .call-icon {
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .call-box a {
+        font-size: 1.5rem;
+    }
+
+    .expectations-box,
+    .consultation-box {
+        margin: 0;
+    }
+
+    .consultation-box {
+        margin-top: 1rem;
+    }
+}
